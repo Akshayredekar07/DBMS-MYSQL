@@ -23,7 +23,7 @@ A database is a shared collection of logically related data and the description 
 5. **Concurrency:** Supports multiple users and processes accessing the data simultaneously without conflicts.
 
 
-**Types of Databases**
+**3. Types of Databases**
 ---
 
 1. **Relational Databases:**  
@@ -47,3 +47,22 @@ A database is a shared collection of logically related data and the description 
    *Examples: Redis, Amazon DynamoDB.*
 
 
+**4. Comparison of Row-oriented and Column-oriented Databases**
+
+
+| **Feature**                     | **Row-oriented Databases**                                                           | **Column-oriented Databases**                                                                           |
+|----------------------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Data Organization**            | Organizes data by record                                                             | Organizes data by field                                                                                  |
+| **Write Optimization**           | Optimized for quick data writing                                                     | Optimized for efficient column querying and computation                                                  |
+| **Use Case**                     | Ideal for Online Transactional Processing (OLTP) applications with frequent writes    | Excel in Online Analytical Processing (OLAP) for ad hoc data querying                                    |
+| **Memory Usage**                 | Can require extra memory when performing aggregations                                | Minimizes extra memory used and reduces number of disks accessed                                         |
+| **Data Encoding & Compression**  | Uses encoding techniques and compression to improve performance                      | Utilizes advanced encoding techniques, such as Run-length encoding, and data compression                 |
+| **Data Warehouses**              | Not primarily designed for data warehousing                                          | Ideal for data warehousing and business intelligence applications                                        |
+| **Examples**                     | Traditional Database Management Systems (e.g., MySQL, PostgreSQL, Oracle)            | Modern cloud data warehouses (e.g., Amazon Redshift, Google BigQuery, Snowflake)                         |
+| **Dominant Architecture**        | Common in relational databases for OLTP workloads                                     | Dominant architecture in relational databases for OLAP and modern cloud data warehouses                  |
+
+
+![Relation database](images/relational.png)
+
+
+![DBMS](images/dbms.png)
